@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ErrorPageController {
 
-    @GetMapping("/templates/error-page/404")
+    @GetMapping("/error-page/404")
     public String errorPage404(HttpServletRequest request, HttpServletResponse response) {
         log.info("errorPage 404");
         return "templates/error-page/404";
     }
 
-    @GetMapping("/templates/error-page/500")
+    @GetMapping("/error-page/500")
     public String errorPage500(HttpServletRequest request, HttpServletResponse response) {
         log.info("errorPage 500");
         return "templates/error-page/500";

@@ -12,8 +12,8 @@ public class WebServerCustomizer implements
 
     @Override
     public void customize(ConfigurableWebServerFactory factory) {
-        ErrorPage errorPage404 = new ErrorPage(HttpStatus.NOT_FOUND, "/templates/error-page/404");
-        ErrorPage errorPage500 = new ErrorPage(HttpStatus.NOT_FOUND, "/templates/error-page/500");
-        ErrorPage errorPageEx = new ErrorPage(RuntimeException.class, "/templates/error-page/500");
+        ErrorPage errorPage404 = new ErrorPage(HttpStatus.NOT_FOUND, "/error-page/404");
+        ErrorPage errorPage500 = new ErrorPage(HttpStatus.NOT_FOUND, "/error-page/500");
+        ErrorPage errorPageEx = new ErrorPage(RuntimeException.class, "/error-page/500");
     }
 }
